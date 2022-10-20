@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import { Discover } from "./pages";
-import { Sidebar, Searchbar, TopPlay } from "./components";
+import { Sidebar, Searchbar, TopPlay, MusicPlayer } from "./components";
 
 const App = () => {
   return (
@@ -28,6 +28,7 @@ const App = () => {
       {/* Active Song */}
       <div className="absolute h-28 bottom-0 left-0 right-0 flex animate-slideup bg-gradient-to-br from-white/10 to-[#2a2a80] backdrop-blur-lg rounded-t-3xl">
         {/* MusicPlayer */}
+        <MusicPlayer />
       </div>
     </div>
   );
