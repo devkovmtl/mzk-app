@@ -51,6 +51,15 @@ const Controls = ({
         />
       )}
 
+      {currentSongs?.length && (
+        <MdSkipNext
+          size={30}
+          color="#FFF"
+          className="cursor-pointer"
+          onClick={handleNextSong}
+        />
+      )}
+
       <BsShuffle
         size={20}
         color={shuffle ? "red" : "white"}
