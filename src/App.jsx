@@ -1,9 +1,12 @@
 import { Routes, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import { Discover } from "./pages";
 import { Sidebar, Searchbar, TopPlay, MusicPlayer } from "./components";
 
 const App = () => {
+  const { activeSong } = useSelector((state) => state.player);
+
   return (
     <div className="relative flex">
       {/* Sidebar */}
@@ -26,10 +29,12 @@ const App = () => {
         </div>
       </div>
       {/* Active Song */}
-      <div className="absolute h-28 bottom-0 left-0 right-0 flex animate-slideup bg-gradient-to-br from-white/10 to-[#2a2a80] backdrop-blur-lg rounded-t-3xl">
-        {/* MusicPlayer */}
-        <MusicPlayer />
-      </div>
+      {activeSong?.title && (
+        <div className="absolute h-28 bottom-0 left-0 right-0 flex animate-slideup bg-gradient-to-br from-white/10 to-[#2a2a80] backdrop-blur-lg rounded-t-3xl">
+          {/* MusicPlayer */}
+          <MusicPlayer />
+        </div>
+      )}
     </div>
   );
 };
