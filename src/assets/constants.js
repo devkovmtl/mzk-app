@@ -1,4 +1,5 @@
 import {
+  HiOutlineHashtag,
   HiOutlineHome,
   HiOutlinePhotograph,
   HiOutlineUserGroup,
