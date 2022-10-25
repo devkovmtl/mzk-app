@@ -1,7 +1,10 @@
+export { default as ArtistCard } from "./ArtistCard";
+export { default as DetailsHeader } from "./DetailsHeader";
 export { default as MusicPlayer } from "./MusicPlayer";
 export { default as Error } from "./Error";
 export { default as Loader } from "./Loader";
 export { default as PlayPause } from "./PlayPause";
+export { default as RelatedSongs } from "./RelatedSongs";
 export { default as Searchbar } from "./Searchbar";
 export { default as Sidebar } from "./Sidebar";
 export { default as SongCard } from "./SongCard";
