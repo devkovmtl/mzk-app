@@ -7,8 +7,8 @@ const Track = ({ isPlaying, isActive, activeSong }) => {
         } hidden sm:block h-16 w-16 mr-4`}
       >
         <img
-          src={activeSong?.images?.covertart}
-          alt="covert art"
+          src={activeSong?.images?.coverart}
+          alt="cover art"
           className="rounded-full"
         />
       </div>
